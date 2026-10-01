@@ -1,22 +1,12 @@
 # TerminalStayAwake
 
 A GTFO mod that keeps a terminal awake when you walk away from it, so a running command keeps going.
-It does the same thing as the vanilla "hold Q while walking away" trick, without having to do the trick.
+It does the same thing as the vanilla "hold Q while walking away" bug/feature, but without having to do it.
 
-- Walk away from an awake terminal and it stays lit and keeps processing.
-- At most `MaxAwakeTerminals` terminals (default 2) are kept awake. Keeping one more puts the oldest back to sleep.
+- Only 2 terminals are kept awake at the same time by default. Keeping one more puts the oldest back to sleep. (Can be changed up to 8 in config)
 - A kept terminal is not put to sleep while another player is standing near it.
 - Coming back to a kept terminal works as normal.
-
-## Client-side
-
-Works whether you are host or client. **Nobody else in the lobby needs the mod.**
-The mod adds no network messages of its own. It only skips the "go to sleep" request your game would normally send
-when you walk away, and the over-limit sleep is the same request vanilla sends.
-Terminal state is shared, so everyone in the lobby sees a terminal you kept as awake.
-
-Known limitation: if a teammate without the mod walks up to a terminal you kept awake and walks away again,
-their game puts it to sleep the vanilla way.
+- Mod is **clientside**.
 
 ## Requirements
 
@@ -26,6 +16,10 @@ their game puts it to sleep the vanilla way.
 
 ## Install
 
+### Option 1
+1. Download via r2modman
+
+### Option 2
 1. Get `TerminalStayAwake.dll` from [`build/`](build/TerminalStayAwake.dll) or the Releases page.
 2. Put it in `BepInEx/plugins/TerminalStayAwake/` of your r2modman profile
    (`%AppData%\r2modmanPlus-local\GTFO\profiles\<profile>\BepInEx`).
