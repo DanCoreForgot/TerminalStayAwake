@@ -1,0 +1,9 @@
+{
+    "name": "TerminalStayAwake",
+    "version_number": "0.2.0",
+    "website_url": "https://github.com/DanCoreForgot/TerminalStayAwake",
+    "description": "Terminals stay awake when you walk away, so running commands keep going (no hold-Q trick). Limit of kept terminals is configurable. Client-side: works as host or client, nobody else needs it.",
+    "dependencies": [
+        "BepInEx-BepInExPack_GTFO-3.2.3"
+    ]
+}

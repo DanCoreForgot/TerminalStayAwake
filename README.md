@@ -11,8 +11,8 @@ It does the same thing as the vanilla "hold Q while walking away" bug/feature, b
 ## Requirements
 
 - GTFO (built and checked against Steam revision 34873)
-- BepInEx 6 IL2CPP (BepInExPack for GTFO, e.g. via r2modman)
-- [GTFO-API](https://thunderstore.io/c/gtfo/p/GTFOModding/GTFO_API/) (`dev.gtfomodding.gtfo-api`)
+- [BepInExPack_GTFO](https://thunderstore.io/c/gtfo/p/BepInEx/BepInExPack_GTFO/) 3.2.3 or newer
+  (BepInEx 6 IL2CPP; it already includes [GTFO-API](https://github.com/GTFO-Modding/GTFO-API), `dev.gtfomodding.gtfo-api`)
 
 ## Install
 
